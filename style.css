@@ -481,7 +481,7 @@ body.dark .proj-fly p{
 	width:0px;
   }
 
- 
+
    .contact{
 	display: flex;
 	position: relative;
@@ -1024,7 +1024,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 
-.circular-menu {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
