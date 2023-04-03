@@ -11,11 +11,30 @@
 			} else {
 				header.removeClass("scroll-on").addClass('start-style');
 			}
+			// var hT = $('#skill-bar-wrapper').offset().top,
+			// 	hH = $('#skill-bar-wrapper').outerHeight(),
+			// 	wH = $(window).height(),
+			// 	wS = $(this).scrollTop();
+			// if (wS > (hT+hH-1.4*wH)){
+			// 	jQuery(document).ready(function(){
+            // 		jQuery('.skillbar-container').each(function(){
+            //     		jQuery(this).find('.skills').animate({
+            //         		width:jQuery(this).attr('data-percent')
+            //     		}, 5000); // 5 seconds
+            // 		});
+        	// 	});
+    		// }
 		});
 	});		
 		
 	//Animation
-	
+	jQuery(document).ready(function(){
+		jQuery('.skillbar-container').each(function(){
+			jQuery(this).find('.skills').animate({
+				width:jQuery(this).attr('data-percent')
+			}, 5000); // 5 seconds
+		});
+	});
 	$(document).ready(function() {
 		$('body.hero-anime').removeClass('hero-anime');
 	});
@@ -33,23 +52,39 @@
 	
 	//Switch light/dark
 	
-	$("#switch").on('click', function () {
-		if ($("body").hasClass("dark")) {
-			$("body").removeClass("dark");
-			$(".intro").addClass("dark")
-			$("#switch").removeClass("switched");
+	// $("#switch").on('click', function () {
+	// 	if ($("body").hasClass("dark")) {
+	// 		$("body").removeClass("dark");
+	// 		$(".intro").addClass("dark")
+	// 		$("#switch").removeClass("switched");
 
-		}
-		else {
-			$("body").addClass("dark");
-			$(".intro").removeClass("dark")
-			$("#switch").addClass("switched");
+	// 	}
+	// 	else {
+	// 		$("body").addClass("dark");
+	// 		$(".intro").removeClass("dark")
+	// 		$("#switch").addClass("switched");
 
-		}
-	});  
-	
+	// 	}
+	// });  
+	// $(window).scroll(function() {
+	// 	var hT = $('#skill-bar-wrapper').offset().top,
+	// 		hH = $('#skill-bar-wrapper').outerHeight(),
+	// 		wH = $(window).height(),
+	// 		wS = $(this).scrollTop();
+	// 	if (wS > (hT+hH-1.4*wH)){
+	// 		jQuery(document).ready(function(){
+	// 			jQuery('.skillbar-container').each(function(){
+	// 				jQuery(this).find('.skills').animate({
+	// 					width:jQuery(this).attr('data-percent')
+	// 				}, 5000); // 5 seconds
+	// 			});
+	// 		});
+	// 	}
+	//  });
   })(jQuery);
-function menu(){
+
+  
+ function menu(){
 	document.getElementById('circularMenu').classList.toggle('active');
 }
   
