@@ -1023,7 +1023,7 @@ body::-webkit-scrollbar-thumb {
 	}
 }
 
-
+.circular-menu {
 	position: fixed;
 	bottom: 1em;
 	right: 1em;
@@ -1130,5 +1130,4 @@ body::-webkit-scrollbar-thumb {
 	background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);   
   }
 
-/**/
 
