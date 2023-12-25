@@ -1,12 +1,4 @@
-// preloader script............
-var audio = document.getElementById("audioPlayer");
-var loader = document.getElementById("preloader");
-window.addEventListener("load", function () {
-  loader.style.display = "none";
-  document.querySelector('.hey').classList.add('popup');
-})
 
-// preloader script ends here.........
 
 // switch for setting
 function settingtoggle(){
