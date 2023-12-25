@@ -1,1 +1,1 @@
-https://Swayamkh02.github.io/portfolio/
+https://swayamkh02.github.io/portfolio/
