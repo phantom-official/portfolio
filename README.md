@@ -100,7 +100,7 @@ To explore the website, simply open `index.html` in a web browser. Navigate thro
 
 Feel free to reach out for collaborations or inquiries:
 
-- **Email:** swayam@example.com
+- **Email:** SwayamKhandelwal02@gmail.com
 - **LinkedIn:** [Swayam Khandelwal](https://www.linkedin.com/in/swayam-khandelwal/)
 - **GitHub:** [Swayam Khandelwal](https://github.com/Swayamkh02)
 
