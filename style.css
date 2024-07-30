@@ -901,6 +901,8 @@ noscript{
     font-weight: 400;
     line-height: 25px;
     color: var(--color-white);
+    text-align: justify;
+    line-height: 30px;
 }
 .dp{
     width: 40%;
