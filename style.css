@@ -897,7 +897,7 @@ noscript{
     flex-direction: column;
 }
 .about-info p{
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 400;
     line-height: 25px;
     color: var(--color-white);
