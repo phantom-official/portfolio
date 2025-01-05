@@ -1095,6 +1095,7 @@ noscript{
     align-items: center;
     justify-content: center;
     width: 100%;
+    
 }
 .projects-section-div{
     width: 60%;
@@ -2092,7 +2093,184 @@ transition-duration: 1.6s;
         left: 40px;
     }
 
+    .hero-name-desktop{
+        display: none !important;
+    }
+
+    .hero-name-mobile{
+        display: block !important;
+    }
+
 }
 
   
   
+.hero-name-mobile{
+    display: none;
+}
+
+.hero-name-desktop{
+    display: block;
+}
+
+/* Cards for projects */
+
+@property --gradient-angle {
+    syntax: "<angle>";
+    initial-value: 0turn;
+    inherits: false;
+  }
+
+  .projects-cards .projects-cards-heading{
+    width: 80%;
+  }
+
+
+  
+
+  /* body {
+    background: #141819;
+  } */
+  .projects-cards{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    @media (max-width: 600px) {
+        margin-top: 100px;
+    }
+  }
+
+  .projects-cards-heading{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 50px;
+}
+  
+  .projectsCardsHeadingP{
+    width: 300px;
+    height: 1px;
+    background-image: -webkit-gradient(linear,left top,right top,from(#b0f3f1),to(#ffcfdf));
+    background-image: -webkit-linear-gradient(left,#b0f3f1,#ffcfdf);
+    background-image: linear-gradient(90deg,#b0f3f1,#ffcfdf);
+    @media (max-width: 600px) {
+        width: 180px; 
+    }
+}
+  
+  .projects-cards-main-div {
+    /* font-family: "游ゴシック Medium", YuGothic, YuGothicM,
+      "Hiragino Kaku Gothic ProN", Meiryo, sans-serif; */
+    line-height: 1.6;
+    display: grid;
+    align-content: center;
+    min-height: 100svh;
+    padding: 24px;
+    color: #d5cec0;
+    gap: 24px;
+    width: 65%;
+    @media (width < 970px) {
+        width: 90%;
+        align-content: center;
+        padding:10px;
+
+    }
+  }
+  
+  .projects-cards .container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    margin-inline: auto;
+    /* grid-auto-flow: column; */
+    grid-template-columns: repeat(3, minmax(300px, 1fr)); /* Force up to 3 columns on desktop */
+    gap: 30px 40px;
+    @media (max-width: 970px) {
+        /* grid-auto-flow: row; */
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+
+    @media (max-width: 600px) {
+        gap: 16px 40px;
+        margin-inline: 15%;
+        grid-template-columns: 1fr; 
+    }
+}
+.projects-cards .card {
+    animation: 10s gradient-angle infinite linear;
+    border: 2px solid transparent;
+    background-image: 
+    linear-gradient(#0e0e16, #11111b),
+    conic-gradient(
+        from var(--gradient-angle),
+        #1d3557 0%,         /* Dark Blue */
+        #8a2be2 10%,        /* Purple */
+        #e73c7e 20%,        /* Pink */
+        #ee7752 25%,        /* Orange (less prominent) */
+        #e73c7e 30%,        /* Back to Pink */
+        #8a2be2 40%,        /* Purple */
+        #23a6d5 50%,        /* Light Blue */
+        #1d3557 60%,        /* Dark Blue */
+        #23d5ab 70%,        /* Green */
+        #23a6d5 80%,        /* Light Blue */
+        #8a2be2 90%,        /* Purple */
+        #1d3557 100%        /* Dark Blue */
+    );
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+  }
+  
+  @keyframes gradient-angle {
+    to {
+      --gradient-angle: 1turn;
+    }
+  }
+  
+
+  
+  .projects-cards .card {
+    display: grid;
+    max-width: 240px;
+    padding: 20px;
+    text-decoration: none;
+    color: currentColor;
+    border-radius: 20px;
+    place-content: center;
+    place-items: center;
+    aspect-ratio: 1/1;
+    row-gap: 16px;
+  }
+  
+  .projects-cards .card h2 {
+    font-family: "Comfortaa", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+  
+  .projects-cards .card p {
+    font-size: 10px;
+  }
+
+  .container .card:hover {
+    transform: scale(1.1, 1.1);
+    cursor: url('click.png');
+    cursor: url('click.png'),
+    url('click.png');
+    cursor: url('click.png'),
+    move;
+        cursor: url('click.png')10 12;
+  }
+  
+  .container:hover > .card:not(:hover) {
+    filter: blur(10px);
+    transform: scale(0.9, 0.9);
+  }
+
+  .container .card{
+    transition: 400ms;
+  }
