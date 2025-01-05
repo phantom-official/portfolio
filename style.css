@@ -1415,6 +1415,9 @@ noscript{
     justify-content: center;
     align-items: center;
     height: 80px;
+    @media (max-width: 600px) {
+        gap: 8px
+    }
 }
 .SocialHandle{
     fill: white;
@@ -1453,6 +1456,10 @@ border: none;
     align-items: center;
     justify-content: center;
     height: 80px;
+    @media (max-width: 600px) {
+        text-align: center;
+        padding-inline: 80px;
+    }
 }
 .footer-bottom article{
     color: rgb(176, 176, 176);
