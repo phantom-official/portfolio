@@ -1192,7 +1192,7 @@ noscript{
     width: 20px;
 }
 .image-div{
-    width: 50%;
+    width: object-fit;
     height: 100%;
     overflow: hidden;
     padding-top: 70px;
